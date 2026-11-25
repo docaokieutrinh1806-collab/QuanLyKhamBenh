@@ -1,0 +1,83 @@
+
+# ==========================================
+# QUAN LY KHAM BENH - GITIGNORE
+# ASP.NET Core Web API + Flutter
+# ==========================================
+
+# ---------- VISUAL STUDIO ----------
+.vs/
+**/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ---------- .NET / ASP.NET CORE ----------
+**/bin/
+**/obj/
+**/out/
+*.dll
+*.pdb
+*.cache
+
+# ---------- BACKEND CONFIGURATION / SECRETS ----------
+# Không đưa cấu hình chứa mật khẩu, JWT Secret lên GitHub
+QuanLyKhamBenhAPI/appsettings.json
+QuanLyKhamBenhAPI/appsettings.Development.json
+**/.env
+**/.env.*
+!**/.env.example
+**/secrets.json
+
+# ---------- PRIVATE MEDICAL DATA ----------
+# Hồ sơ bệnh án và tài liệu riêng tư
+QuanLyKhamBenhAPI/PrivateFiles/
+QuanLyKhamBenhAPI/wwwroot/uploads/
+
+# ---------- FLUTTER / DART ----------
+**/.dart_tool/
+**/.packages
+**/.pub-cache/
+**/build/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/coverage/
+**/pubspec_overrides.yaml
+
+# ---------- ANDROID ----------
+**/local.properties
+**/*.jks
+**/*.keystore
+**/key.properties
+**/.gradle/
+**/captures/
+
+# ---------- IOS ----------
+**/Pods/
+**/.symlinks/
+**/Flutter/ephemeral/
+**/DerivedData/
+**/*.xcuserstate
+**/xcuserdata/
+
+# ---------- WINDOWS / LINUX / MACOS ----------
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+**/flutter/ephemeral/
+
+# ---------- IDE ----------
+**/.idea/
+**/.vscode/
+
+# ---------- OPERATING SYSTEM ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---------- LOGS / TEMPORARY ----------
+*.log
+*.tmp
+*.bak
+*.temp
