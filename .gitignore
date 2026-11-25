@@ -1,0 +1,24 @@
+# .NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+
+# Android
+local.properties
+
+# IDE
+.idea/
+.vscode/
+
+# Secrets
+.env
+.env.*
